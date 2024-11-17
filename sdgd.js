@@ -9,7 +9,15 @@ async function sendProfileRequest() {
         'Dnt': '1',
         'Origin': 'https://www.screwfix.com'
       },
-      body: JSON.stringify({"data":{"type":"UpdateCustomer","attributes":{"firstName":"hello","lastName":"test","emailAddress":"testindeed400+1@gmail.com","title":"Mr","phone":"02073838150","profession":"Plumbing/Heating Engineer"}}}),
+      body: JSON.stringify({data:{type:'UpdateCustomer',
+                                  attributes:{firstName:'hello',
+                                                                    lastName:'test',
+                                                                    emailAddress:'testindeed400+ATO@gmail.com',
+                                                                    title:'Mr',
+                                                                    phone:'02073838150',
+                                                                    profession:'Plumbing/Heating Engineer'
+                                                                   }
+                                 }}),
       credentials: 'include' // Ensures cookies from the browser are sent
     });
 
